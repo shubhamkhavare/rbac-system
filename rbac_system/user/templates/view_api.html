@@ -1,0 +1,62 @@
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Usernames Mapped to APIs</title>
+</head>
+<body>
+    <h1>Usernames Mapped to APIs</h1>
+    {% for user in user_api %}
+        <h4>{{ user.username }}</h4>
+        <ul>
+            {% for api in user.apis.all %}
+                <li>{{ api.api_name }}</li>
+            {% endfor %}
+        </ul>
+    {% empty %}
+        <p>No users with mapped APIs found.</p>
+    {% endfor %}
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usernames Mapped to APIs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+        h4 {
+            color: #555;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            color: #777;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usernames Mapped to APIs</h1>
+    {% for user in user_api %}
+        <h4>{{ user.username }}</h4>
+        <ul>
+            {% for api in user.apis.all %}
+                <li>{{ api.api_name }}</li>
+            {% endfor %}
+        </ul>
+    {% empty %}
+        <p>No users with mapped APIs found.</p>
+    {% endfor %}
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <div style = "text-align: center; margin-top:20px;">
+    <title>User</title>
+    </div>
+</head>
+<body>
+    <div style = "text-align: center; margin-top:20px;">
+    <h1>User</h1>
+    </div>
+    <div style = "text-align: center; margin-top:20px;">
+    <ul>
+        <p><a href="{% url 'add_api' %}">Add API</p>
+        <p><a href="{% url 'update_api' %}">Update API</a></p>
+        <p><a href="{% url 'view_api' %}">View API</a></p>
+    </ul>
+</div>
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 20px;">
+        <div style="margin-top: 200px;">
+        <h1>User</h1>
+        </div>
+    </div>
+    <div style="margin-top: 30px;">
+        <ul>
+            <li><a href="{% url 'add_api' %}">Add API</a></li>
+            <li><a href="{% url 'update_api' %}">Update API</a></li>
+            <li><a href="{% url 'view_api' %}">View API</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin</title>
+</head>
+<body>
+    <div style = "text-align: center; margin-top:20px;">
+    <h1>Admin</h1>
+    </div>
+    <div style = "text-align: center; margin-top:20px;">
+    <ul>
+        <p><a href="{% url 'add_user' %}">Add User</p>
+        <p><a href="{% url 'add_api' %}">Add API</p>
+        <p><a href="{% url 'remove_user' %}">Remove User</a></p>
+        <p><a href="{% url 'update_user' %}">Update User</a></p>
+        <p><a href="{% url 'remove_api' %}">Remove API</a></p>
+        <p><a href="{% url 'update_api' %}">Update API</a></p>
+        <p><a href="{% url 'view_api' %}">View API</a></p>
+    </ul>
+</div>
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            display: block;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+        div {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 100px;">
+        <h1>Admin</h1>
+    </div>
+    <div style="text-align: center; margin-top: 50px;">
+        <ul>
+            <li><a href="{% url 'add_user' %}">Add User</a></li>
+            <li><a href="{% url 'add_api' %}">Add API</a></li>
+            <li><a href="{% url 'remove_user' %}">Remove User</a></li>
+            <li><a href="{% url 'update_user' %}">Update User</a></li>
+            <li><a href="{% url 'remove_api' %}">Remove API</a></li>
+            <li><a href="{% url 'update_api' %}">Update API</a></li>
+            <li><a href="{% url 'view_api' %}">View API</a></li>
+        </ul>
+    </div>
+</body>
+</html>
